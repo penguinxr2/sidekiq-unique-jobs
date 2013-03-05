@@ -12,12 +12,6 @@ module SidekiqUniqueJobs
 
           Sidekiq.redis {|conn| conn.del(payload_hash) }
         end
-
-        protected
-
-        def logger
-          Sidekiq.logger
-        end
       end
     end
   end
