@@ -14,11 +14,11 @@ Gem::Specification.new do |gem|
   gem.name          = "sidekiq-unique-jobs"
   gem.require_paths = ["lib"]
   gem.version       = SidekiqUniqueJobs::VERSION
-  gem.add_dependency                  'sidekiq', '>= 2.2.0'
+  gem.add_dependency                  'sidekiq', '~> 2.6'
   gem.add_development_dependency      'minitest', '~> 3'
   gem.add_development_dependency      'sinatra'
   gem.add_development_dependency      'slim'
   gem.add_development_dependency      'rake'
-  gem.add_development_dependency      'actionmailer', '~> 3'
-  gem.add_development_dependency      'activerecord', '~> 3'
+  gem.add_development_dependency      'activesupport', '~> 3'
+  gem.add_development_dependency      'simplecov'
 end
